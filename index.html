@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Лабиринт со смайликом</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🌀 Лабиринт</h1>
+
+  <!-- Выбор смайлика -->
+  <div id="emoji-selection">
+    <p>Выбери своего персонажа:</p>
+    <button class="emoji-button">😊</button>
+    <button class="emoji-button">🐱</button>
+    <button class="emoji-button">🐸</button>
+    <button class="emoji-button">🤖</button>
+    <button class="emoji-button">👾</button>
+    <button class="emoji-button">🦄</button>
+    <button class="emoji-button">🐶</button>
+    <button class="emoji-button">🐻</button>
+    
+
+  </div>
+
+  <!-- Лабиринт -->
+  <div id="game" style="display: none;">
+    <p>Доберись до выхода 🚪 с помощью стрелочек!</p>
+    <p>Твой персонаж: <span id="selected-emoji">😊</span></p>
+    <p>Твоя цель: <span id="goal-emoji">🚪</span></p>
+
+
+    <div id="maze"></div>
+    <p id="message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
